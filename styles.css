@@ -17,10 +17,9 @@ body {
   background: whitesmoke;
 }
 
-/*============= NAVBAR ===============*/
 nav{
-  position: fixed; /* Hace que el navbar quede fijo en la parte superior */
-  top: 0; /* Alinea el navbar en la parte superior */
+  position: fixed; 
+  top: 0; 
   left: 0;
   display: flex;
   justify-content: space-between;
