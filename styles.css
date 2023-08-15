@@ -1,32 +1,474 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background:whitesmoke;
+
+:root {
+  --color-black: #050405;
+  --color-pink: #C250D8;
+  --color-light_purple: #721E8D;
+  --color-light_pink: #F495F8;
+  --color-purple: #501C54;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+/*============= NAVBAR ===============*/
 nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    padding: 1rem;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+  position: fixed; /* Hace que el navbar quede fijo en la parte superior */
+  top: 0; /* Alinea el navbar en la parte superior */
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  z-index: 1000; 
 }
 
+.nav__logo{
+  margin-right: auto;
+}
 ul a{
-    color: aliceblue;
-    text-decoration: none;
+  color: aliceblue;
+  text-decoration: none;
 }
 
 .nav__link{
-    padding: 15px;
+  padding: 15px;
 }
 
 ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
 }
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column; 
+      padding: 0.5rem; 
+  }
+
+  .nav__logo{
+    display: flex;
+    margin: auto;
+  }
+
+  .nav__link {
+      padding: 10px;
+  }
+}
+
+ul a:hover {
+  color: var(--color-light_purple);
+}
+
+
+
+body {
+  background: linear-gradient(to bottom, var(--color-light_pink), var(--color-purple));
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 20px 20px; 
+  
+}
+
+
+@media (max-width: 768px) {
+  main {
+    margin: 132px 20px 20px; 
+  }
+}
+
+
+
+
+  
+  .main_presentacion-general {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .main_presentacion-general img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .main_presentacion-general p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+.main_presentacion-profes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .main_presentacion-profe1,
+  .main_presentacion-profe2,
+  .main_presentacion-profe3,
+  .main_presentacion-profe4 {
+    max-width: 150px;
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+  
+  .main_presentacion-profe1 img,
+  .main_presentacion-profe2 img,
+  .main_presentacion-profe3 img,
+  .main_presentacion-profe4 img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .main_presentacion-profe1 p,
+  .main_presentacion-profe2 p,
+  .main_presentacion-profe3 p,
+  .main_presentacion-profe4 p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .main_presentacion-profes {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    
+    .main_presentacion-profe1,
+    .main_presentacion-profe2,
+    .main_presentacion-profe3,
+    .main_presentacion-profe4 {
+      width: 100%;
+      margin-bottom: 20px; 
+    }
+  }
+  
+
+ 
+.main-horarios {
+    max-width: 800px;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+
+.main-horarios img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.main-medios_pago {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.main-medios_pago img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-horarios img {
+        max-height: 200px;
+    }
+
+    .main-medios_pago img {
+        width: 100px; 
+        height: 100px;
+        margin: 5px; 
+    }
+}
+
+
+.main_presentacion-profe1,
+.main_presentacion-profe2,
+.main_presentacion-profe3,
+.main_presentacion-profe4 {
+  position: relative;
+  max-width: 200px;
+  text-align: center;
+  margin: 20px;
+  background-color: var(--color-light_pink);
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+img{
+  image-rendering: crisp-edges;
+}
+
+.main_presentacion-profe1 img,
+.main_presentacion-profe2 img,
+.main_presentacion-profe3 img,
+.main_presentacion-profe4 img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 30%;
+  margin-bottom: 10px;
+  
+}
+
+
+.main_presentacion-profe1 p,
+.main_presentacion-profe2 p,
+.main_presentacion-profe3 p,
+.main_presentacion-profe4 p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+.like-icon {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  color: black; 
+  transition: color 0.3s ease; 
+  margin: 3px;
+}
+
+
+.like-icon:hover {
+  color: var(--color-pink); 
+}
+
+.like-icon:before {
+  content: '\2764';
+  font-size: 24px;
+}
+
+.instagram-icon {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  color: var(--color-black);
+  transition: color 0.3s ease;
+  margin: 5px;
+}
+
+.instagram-icon:hover {
+  color: var(--color-pink); 
+}
+
+.instagram-icon:before {
+  content: '\f16d'; 
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 24px;
+}
+
+}
+
+.like-icon {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  color: black; 
+  transition: color 0.3s ease; 
+  margin: 3px;
+}
+
+.like-icon:hover {
+  color: var(--color-pink); 
+}
+
+
+.like-icon:before {
+  content: '\2764'; 
+  font-size: 24px;
+}
+
+
+.instagram-icon {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+    margin: 5px;
+    
+}
+
+
+.instagram-icon:hover {
+    color: #E4405F; 
+}
+
+.instagram-icon:before {
+    content: '\f16d'; 
+    font-family: 'Font Awesome 5 Brands'; 
+    font-size: 24px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-horarios{
+  margin: 10%;
+}
+
+
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  width: 102.5%; 
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+
+@media (max-width: 768px){
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 107%; 
+  }
+
+}
+
+@media (max-width: 768px){
+.main_presentacion-profe1,
+.main_presentacion-profe2,
+.main_presentacion-profe3,
+.main_presentacion-profe4 {
+  max-width: 200px;
+}
+}
+
+p{
+  margin-bottom: 30px;
+}
+
+form{
+  background: linear-gradient(to bottom, var(--color-light_pink), var(--color-purple));
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.horario {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+}
+
+.dia {
+  font-weight: bold;
+}
+
+.clase,
+.hora {
+  padding: 5px;
+}
+
+.main_horario-clases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3%;
+}
+
+.main_horario-clases h2 {
+  margin-bottom: 20px;
+}
+
+.main_presentacion-general{
+  padding: 3%;
+}
+
+footer h3{
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .horario {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .horario > * {
+    margin-bottom: 5px;
+  }
+
+  .dia {
+    font-weight: bold;
+  }
+
+  .clase,
+  .hora {
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_horario-clases {
+    text-align: center;
+    padding: 3%;
+  }
+}
+
+

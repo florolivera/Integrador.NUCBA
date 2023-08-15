@@ -4,14 +4,178 @@
     <meta charset="UTF-8">
     <title>Jazz Joven</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
 </head>
 <body>
+
     <nav>
-        <img src="./img/logo-principal.png" class="nav__logo-principal" width="150px" height="60px">
-        <ul>
-            <li class="nav__link"><a href="#">Home</a></li>
-            <li class="nav__link"><a href="#">Clases</a></li>
-            <li class="nav__link"><a href="#">Contacto</a></li>
+        <label for="nav-toggle" class="nav__button">
+          <div class="nav__icon"></div>
+        </label>
+        <div class="nav__logo">
+          <img src="./img/logo-principal.png" class="nav__logo-principal" width="150px" height="60px">
+        </div>
+        <ul class="nav__links">
+          <li class="nav__link"><a href="#">Home</a></li>
+          <li class="nav__link"><a href="#id_horarios-clases">Horarios</a></li>
+          <li class="nav__link"><a href="Registro.html">Inscribirme</a></li>
+          <li class="nav__link"><a href="Login.html">Iniciar Sesion</a></li>
         </ul>
-    </nav>
+      </nav>
+      
+      
+
+    <main>
+        <div class="main_presentacion-general">
+            <h1>ACADEMIA JAZZ JOVEN</h1>
+            <img src="./img//Presentacion-clases.jpeg" alt="imagen representativa">
+            <p>
+            La escuela de danzas JAZZ JOVEN fue creada por Antonella Caprioli, en la busca de crear 
+            una nueva modalidad de la danza. Podes encontrar distintas rutinas como lo son Ritmos Urbanos, 
+            Jazz Contemporáneo, PBT, Arabe, entre otros. 
+            </p>
+            
+            <h2>NUESTRAS PROFESORAS</h2>
+            <div class="main_presentacion-profes">
+                
+                <div class="main_presentacion-profe1">
+                        <img src="./img/Presentacion-Anto.jpeg" alt="profe1">
+                        <h4>Antonella Caprioli</h4>
+                        <p>
+                            Es la directora de Jazz Joven. Asistió a Comedia Musical (Escuela
+                            de Reina Reech) y Acrobacia (Escuela Flavio Mendoza).
+                            Integró compañías como Argentine Tango Company y Tango Rojo.
+                            Tambien en paralelo inició con los estilos urbanos y contemporáneos con 
+                            profesores como Matias Napp. 
+                            En 2018 y 2023 dio un paso enorme en su carrera asistiendo a clases de escuelas 
+                            internacionales. 
+                            A su vez entre 2018 y 2022 cursó la Tecnicatura en Intérprete de de Danzas 
+                            en la Fundación Julio Bocca. 
+                            <span class="like-icon"></span> 
+                            <span class="instagram-icon"></span> 
+  
+                        </p>
+                </div>
+
+                <div class="main_presentacion-profe2">
+                    <img src="./img/Presentacion-Selene.jpeg" alt="profe2">
+                    <h4>Selene Gorordo</h4>
+                    <p>
+                        
+                        en 2011 Tomó clases de gimnasia artística en Deboulé,
+                        durante el 2013 comenzó clases de jazz en la Academia de Hugo Patin.
+                        Empezó a tomar clases con Antonella Caprioli y en la escuela de Reina  Reech en 2017.
+                        Durante el 2021 tomó clases en Tango Musas con Natalia Patin y en la Estacion de la Danza,
+                        en el 2022 Comenzó a dar clases en grupos infantiles en Jazz Joven</li>
+                        y en 2023 le otorgaron una pasantía de ayudante en talleres de baile del colegio Armonia
+                        
+                        <span class="like-icon"></span>
+                        <span class="instagram-icon"></span> 
+                    </p>
+                      
+                </div> 
+                
+                  
+                  
+
+                <div class="main_presentacion-profe3">
+                    <img src="./img/Presentacion-Natalia.jpeg" alt="profe3">
+                    <h4>Natalia Spadoni</h4>
+                    <p>
+                        Es nuestra profesora de danzas árabes, tuvo una extensa formación en el ritmo.
+                        Se unió durante el año 2023 a Jazz Joven, tras años de experiencia dando clases 
+                        del ritmo en la ciudad de Campana. 
+                        <span class="like-icon"></span> <!-- Agregar el ícono de "like" -->
+                        <span class="instagram-icon"></span> <!-- Agregar el ícono de "persona" -->
+  
+                    </p>
+                </div>
+
+                <div class="main_presentacion-profe4">
+                    <img src="./img//Presentacion-maribel.jpeg" alt="profe4">
+                    <h4>Maribel Vallejos</h4>
+                    <p>
+                        Tiene certificación en nivel 1, 2 y 3 de PBT (Progressing Ballet Technique) 
+                        por la profesora Contansa Belgareto, se formó hasta el 5to año de danza clásica, 
+                        tomó clases de jazz con Hernan Casanova y participó de dos temporadas 
+                        del show Varieté.
+                        Formó parte del Ballet Martin Fierro participando en distintos festivales
+                        de folklore desde el 2010 al 2012. Se formó en tango con diversos profesores 
+                        reconocidos en el rubro. Tuvo una extensa formación en jazz. Participó en seminarios 
+                        de Bombo y Flamenco.
+                        <span class="like-icon"></span>
+                        <span class="instagram-icon"></span> 
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main_horario-clases" id="id_horarios-clases">
+            <h2>HORARIOS</h2>
+
+        
+
+        <div class="horario">
+            <div class="dia">Lunes</div>
+            <div class="clase">Progresive Ballet Techinque</div>
+            <div class="hora">17:30 - 18:30</div>
+            <div class="clase">Infantiles</div>
+            <div class="hora">19:00 - 20:00</div>
+            <div class="clase">Árabe</div>
+            <div class="hora">20:00 - 21:30</div>
+        </div>
+    
+        <div class="horario">
+            <div class="dia">Martes</div>
+            <div class="clase">Urbano Fusion</div>
+            <div class="hora">17:30 - 18:30</div>
+            <div class="clase">Teens</div>
+            <div class="hora">18:30 - 20:00</div>
+            <div class="clase">Jazz Adultos</div>
+            <div class="hora">20:00 - 21:45</div>
+        </div>
+    
+        <div class="horario">
+            <div class="dia">Miércoles</div>
+            <div class="clase">Jazz Contemporáneo</div>
+            <div class="hora">17:00 - 18:30</div>
+            <div class="clase">Heels Principiante</div>
+            <div class="hora">18:45 - 20:00</div>
+            <div class="clase">Heels Avanzado</div>
+            <div class="hora">20:00 - 21:30</div>
+        </div>
+    
+        <div class="horario">
+            <div class="dia">Jueves</div>
+            <div class="clase">Progressive Ballet Technique</div>
+            <div class="hora">17:00 - 18:00</div>
+            <div class="clase">Infantiles</div>
+            <div class="hora">19:00 - 20:00</div>
+        </div>
+    
+        <div class="horario">
+            <div class="dia">Viernes</div>
+            <div class="clase">Urbano Fusion</div>
+            <div class="hora">17:30 - 18:30</div>
+            <div class="clase">Teens</div>
+            <div class="hora">18:30 - 19:30</div>
+        </div>
+    
+
+       </div>
+    </main> 
+    <footer id="Contacto">
+            <div class="footer-content">
+              <div class="social-media">
+                <h3>Contactanos</h3>
+                <a href="https://www.facebook.com/jazzjoven.ac"><img src="./img/logo-facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/jazzjoven/"><img src="./img/logo-instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@jazzjoven.escueladedanza"><img src="./img/logo-tiktok.png" alt="Tik Tok"></a>
+              </div>
+            </div>
+    </footer>
+
 </body>
